@@ -3,12 +3,16 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
+  "homepage": "https://nattho.com/",
+    "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy" : "gh-pages -d dist",
+    "predeploy" : "npm run build"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "vite": "^6.1.0"
   },
   "dependencies": {
